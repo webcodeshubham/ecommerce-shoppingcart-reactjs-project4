@@ -1,0 +1,73 @@
+/* Default Styling */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Stylings */
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1vw 2vw;
+  background-image: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    rgba(182, 170, 190, 0.172),
+    rgba(154, 142, 154, 0.273)
+  );
+}
+
+.navbarLinks {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbarLinks__shop {
+  text-decoration: none;
+  color: black;
+  margin-right: 3vw;
+  font-size: 1.6vw;
+}
+
+.navbarLinks--img {
+  font-size: 2.2vw;
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .navbarLinks__shop {
+    margin-right: 3vw;
+    font-size: 2.5vw;
+  }
+  .navbarLinks--img {
+    font-size: 3.6vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbarLinks__shop {
+    margin-right: 3vw;
+    font-size: 3.8vw;
+  }
+  .navbarLinks--img {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .navbarLinks__shop {
+    margin-right: 3vw;
+    font-size: 5vw;
+  }
+  .navbarLinks--img {
+    font-size: 5vw;
+  }
+}
