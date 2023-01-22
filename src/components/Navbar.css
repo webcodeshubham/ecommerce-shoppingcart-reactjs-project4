@@ -9,9 +9,9 @@
 
 .navbar {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  padding: 1vw 2vw;
+  padding: 1.2vw 4vw;
   background-image: linear-gradient(
     to right,
     red,
@@ -22,6 +22,10 @@
     rgba(182, 170, 190, 0.172),
     rgba(154, 142, 154, 0.273)
   );
+}
+
+.navbar__brandlogo img {
+  width: 2.5vw;
 }
 
 .navbarLinks {
@@ -42,10 +46,28 @@
   color: black;
 }
 
-@media screen and (max-width: 600px) {
+/* Media Screens at different sizes */
+
+@media screen and (max-width: 700px) {
+  .navbar__brandlogo img {
+    width: 3.5vw;
+  }
   .navbarLinks__shop {
     margin-right: 3vw;
-    font-size: 2.5vw;
+    font-size: 2.3vw;
+  }
+  .navbarLinks--img {
+    font-size: 3.6vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar__brandlogo img {
+    width: 3.5vw;
+  }
+  .navbarLinks__shop {
+    margin-right: 3vw;
+    font-size: 2.3vw;
   }
   .navbarLinks--img {
     font-size: 3.6vw;
@@ -53,9 +75,12 @@
 }
 
 @media screen and (max-width: 500px) {
+  .navbar__brandlogo img {
+    width: 4.5vw;
+  }
   .navbarLinks__shop {
     margin-right: 3vw;
-    font-size: 3.8vw;
+    font-size: 3.7vw;
   }
   .navbarLinks--img {
     font-size: 4vw;
@@ -63,9 +88,12 @@
 }
 
 @media screen and (max-width: 450px) {
+  .navbar__brandlogo img {
+    width: 5.5vw;
+  }
   .navbarLinks__shop {
     margin-right: 3vw;
-    font-size: 5vw;
+    font-size: 4.6vw;
   }
   .navbarLinks--img {
     font-size: 5vw;
