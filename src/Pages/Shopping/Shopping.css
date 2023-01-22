@@ -70,15 +70,23 @@
 /* Media Screens at different sizes */
 
 @media screen and (max-width: 600px) {
+  .shoppingPage__title {
+    font-size: 2.8vw;
+  }
+
   .shoppingPage__products {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1vw 3vw;
+  }
+
+  .product {
+    width: 60vw;
+    margin: 3vw;
   }
 
   .product__image {
-    width: 20vw;
+    width: 50vw;
     padding-bottom: 0.5vw;
   }
 
@@ -93,6 +101,10 @@
 }
 
 @media screen and (max-width: 450px) {
+  .shoppingPage__title {
+    font-size: 3.5vw;
+  }
+
   .shoppingPage__products {
     display: flex;
     flex-direction: column;
