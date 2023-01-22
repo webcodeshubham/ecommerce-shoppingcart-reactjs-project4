@@ -12,6 +12,8 @@
 🌺#G. App.jsx => Switch/Routes Inbuilt Components => react-router-dom v6, <Switch /> has been replaced by <Routes />. The switch component looks through all of its child route and it displays the first one whose path matches the current URL. It displays the one Route at a time.
 🌺#H. App.jsx/Individual Components/Containers(Pages) => App Layout => Components & Containers(Pages) Layout.
 🌺#I. All Files & Folders must be Inside src dir. Relative imports outside of src/ are not supported.
+🌺#J. Build the Components for NavBar, Shopping, & Cart Pages with its own Inputs, Outputs, and its Functionality.
+🌺#K. Build the Shopping Cart Page => HTML, CSS, and JavaScript.
 
 🔥🥀 Important Notes 🥀🔥
 

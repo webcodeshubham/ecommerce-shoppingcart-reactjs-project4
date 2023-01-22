@@ -26,6 +26,7 @@
 
 .navbar__brandlogo img {
   width: 2.5vw;
+  cursor: pointer;
 }
 
 .navbarLinks {

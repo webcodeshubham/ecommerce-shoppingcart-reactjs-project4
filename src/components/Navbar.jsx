@@ -9,7 +9,9 @@ const Navbar = () => {
     <>
       <div className="navbar">
         <div className="navbar__brandlogo">
-          <img src={cartIcon} alt="cart-icon" />
+          <Link to="/">
+            <img src={cartIcon} alt="cart-icon" />
+          </Link>
         </div>
         <div className="navbarLinks">
           <Link className="navbarLinks__shop" to="/">
