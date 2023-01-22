@@ -1,0 +1,47 @@
+/* Default Styling */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Shopping Page Stylings */
+
+.shoppingPage {
+  text-align: center;
+  padding: 2vw 6vw;
+}
+
+.shoppingPage__title {
+  font-size: 1.6vw;
+  margin: 1vw 0;
+}
+
+.shoppingPage__products {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1vw 3vw;
+}
+
+.product {
+  width: 20vw;
+  margin: 3vw;
+}
+
+.product__description {
+  padding: 1vw;
+  line-height: 2vw;
+  border-radius: 8px;
+  margin-top: 1vw;
+  color: rgb(96, 214, 193);
+  background-image: linear-gradient( to bottom right, black, rgba(1, 9, 14, 0.638));
+  font-size: 1.2vw;
+  cursor: pointer;
+}
+
+.product__image {
+  width: 20vw;
+  padding-bottom: 0.5vw;
+}

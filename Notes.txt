@@ -2,7 +2,8 @@
 
 🌿🥀🌳 Points to Remember 🌳🥀🌿
 
-#1. Mind-Mapping/Project Flow/Project Layout/Project Structure.
+🔥🏆⭐️#1. Mind-Mapping/Project Flow/Project Layout/Project Structure.🔥🏆⭐️
+
 🌺#A. First Setup a Simple React Application with Clean Up Process.
 🌺#B. Get the Ingredients on the table first - Node Packages like here, as phosphor-react(React Icons) & react-router-dom (Routings).
 🌺#C. Download the dependencies from yarn add (Install the Yarn Package Manager => npm install --global yarn and yarn --version) or npm install.
@@ -11,9 +12,19 @@
 🌺#F. App.jsx => Exact Params => The exact param/prop comes into play when you have multiple paths that have similar names like Home - "/".  React router does partial matching. The exact param disables the partial matching for a route and makes sure that it only returns the route if the path is an EXACT match to the current url.
 🌺#G. App.jsx => Switch/Routes Inbuilt Components => react-router-dom v6, <Switch /> has been replaced by <Routes />. The switch component looks through all of its child route and it displays the first one whose path matches the current URL. It displays the one Route at a time.
 🌺#H. App.jsx/Individual Components/Containers(Pages) => App Layout => Components & Containers(Pages) Layout.
-🌺#I. All Files & Folders must be Inside src dir. Relative imports outside of src/ are not supported.
+🌺#I. All Files & Folders must be Inside src dir. Relative imports outside of /src/ are not supported.
 🌺#J. Build the Components for NavBar, Shopping, & Cart Pages with its own Inputs, Outputs, and its Functionality.
 🌺#K. Build the Shopping Cart Page => HTML, CSS, and JavaScript.
+🌺#L. products.js => App.jsx => Create a Static Database as an Array of Objects for Products and then map them using Array Map Method.
+🌺#M. Create a Product Component & Style the Shopping & Product Component.
+🌺#N. 
+🌺#O. 
+🌺#P. 
+🌺#Q. 
+🌺#R. 
+🌺#S. 
+🌺#T. 
+🌺#U. 
 
 🔥🥀 Important Notes 🥀🔥
 
