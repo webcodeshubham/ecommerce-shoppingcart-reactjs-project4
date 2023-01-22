@@ -1,20 +1,15 @@
-🥀 E-Commerce Shopping Cart - React JS 🥀
+🥀 E-Commerce Shopping Cart - React JS - Simple Frotend Project🥀
 
 🌿🥀🌳 Points to Remember 🌳🥀🌿
 
-#1. Mind-Mapping/Project FLow/Project Layout/Project Structure.
+#1. Mind-Mapping/Project Flow/Project Layout/Project Structure.
 🌺#A. First Setup a Simple React Application with Clean Up Process.
 🌺#B. Get the Ingredients on the table first - Node Packages like here, as phosphor-react(React Icons) & react-router-dom (Routings).
-🌺#C. Download the dependencies from yarn add or npm install.
-🌺#D. 
-
-#1. This project will fetch and render all the movies from the third party Fake API - TMDB Services.
-#2. Added Trailer Pop-up Functionality.
-#3. Responsive Design.
-#4. Deployment on Google Firebase Hosting.
-#5. JS ES6 (2015) Concepts => Array & Object Destructuring, Import & Export, Spread Operators, Hooks.
-#6. Hooks are small functional pieces of code which can perform multiple operations.
-#7. We can have only one default export in one functional module or component, without default export means named export can be used or destructured in another functional module or component.
+🌺#C. Download the dependencies from yarn add (Install the Yarn Package Manager => npm install --global yarn and yarn --version) or npm install.
+🌺#D. App.jsx => Start Setting Up - Initial Structure of the Project - App Layout.
+🌺#E. App.jsx => Start Setting Up - Routes inside the Project.
+🌺#F. App.jsx => Exact Params => The exact param/prop comes into play when you have multiple paths that have similar names like Home - "/".  React router does partial matching. The exact param disables the partial matching for a route and makes sure that it only returns the route if the path is an EXACT match to the current url.
+🌺#G. App.jsx => Switch/Routes Inbuilt Components => react-router-dom v6, <Switch /> has been replaced by <Routes />. The switch component looks through all of its child route and it displays the first one whose path matches the current URL. It displays the one Route at a time.
 
 🔥🥀 Important Notes 🥀🔥
 
