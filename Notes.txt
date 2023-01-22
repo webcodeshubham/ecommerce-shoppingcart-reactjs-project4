@@ -16,8 +16,8 @@
 🌺#J. Build the Components for NavBar, Shopping, & Cart Pages with its own Inputs, Outputs, and its Functionality.
 🌺#K. Build the Shopping Cart Page => HTML, CSS, and JavaScript.
 🌺#L. products.js => App.jsx => Create a Static Database as an Array of Objects for Products and then map them using Array Map Method.
-🌺#M. Create a Product Component & Style the Shopping & Product Component.
-🌺#N. 
+🌺#M. Create & Style the Shopping & Product Component.
+🌺#N. Add the Button Functionality along with Stylings for the Shopping Cart Landing Page.
 🌺#O. 
 🌺#P. 
 🌺#Q. 

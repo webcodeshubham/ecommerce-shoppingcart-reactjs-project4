@@ -13,6 +13,9 @@ const Product = (props) => {
           {/* Money Symbol */}
           <p>${productPrice}</p>
         </div>
+        <button className="product__addToCartbtn">
+          Add to Cart
+        </button>
       </div>
     </>
   );
