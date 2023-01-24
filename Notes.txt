@@ -22,7 +22,7 @@
 🌺#N. Add the Button Functionality along with Stylings for adding the Product from Home Page to the Cart Page.
 🌺#O. useContext API => State Management Mechanism/Tools like Redux is required in order to handle the state of the component & Declare & Define the State Variables and Handler Functions at one place and then use & call them everywhere, whenever there is a need.
 🌺#P. useContext API => Context API is a built-in API introduced in ​​React 16.3. It makes it possible to pass data from parent to children nested deep down the component tree directly, instead of passing it down through a chain of props.
-🌺#Q. Create a ShopContextAPI Component which means all the Functionality Code and Database Storage within Context File.
+🌺#Q. Create a ShopContext & ShopContextProvider Component which means all the Functionality Code and Temporary State Storage within the Context File.
 🌺#R. 
 🌺#S. 
 🌺#T. 
