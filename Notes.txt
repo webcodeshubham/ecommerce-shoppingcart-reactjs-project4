@@ -23,10 +23,19 @@
 🌺#O. useContext API => State Management Mechanism/Tools like Redux is required in order to handle the state of the component & Declare & Define the State Variables and Handler Functions at one place and then use & call them everywhere, whenever there is a need.
 🌺#P. useContext API => Context API is a built-in API introduced in ​​React 16.3. It makes it possible to pass data from parent to children nested deep down the component tree directly, instead of passing it down through a chain of props.
 🌺#Q. Create a ShopContext & ShopContextProvider Component which means all the Functionality Code and Temporary State Storage within the Context File.
-🌺#R. 
-🌺#S. 
-🌺#T. 
-🌺#U. 
+🌺#R. React useContext Hook => React Context is a way to manage state globally. It can be used together with the useState Hook to share state between deeply nested components more easily than with useState alone.
+🌺#S. useContext Hook => The Problem => State should be held by the highest parent component in the stack that requires access to the state. To illustrate, we have many nested components. The component at the top and bottom of the stack need access to the state. To do this without Context, we will need to pass the state as "props" through each nested component. This is called "prop drilling".
+🌺#T. useContext Hook => The Solution => 
+👨‍💻#1. Let's Create the Store Room with Bricks. To create context, you must Import createContext Function and initialize it to a Variable. 
+👨‍💻#2. Now, we will get the access of Store Room by Owner via Provider Method.
+👨‍💻#3. Next, we'll use the Context Provider to wrap the tree of components that need the state Context.
+👨‍💻#4. Wrap child components in the Context Provider and supply the state value. Now, all components in this tree will have access to the user Context.
+🌺#U. Read the Same Article here. (https://www.w3schools.com/react/react_usecontext.asp)
+🌺#V. useContext Hook => Use the useContext Hook => In order to use the Context in a child component, we need to access it using the useContext Hook.
+🌺#W. 
+🌺#X. 
+🌺#Y. 
+🌺#Z.  
 
 🔥🥀 Important Notes 🥀🔥
 
