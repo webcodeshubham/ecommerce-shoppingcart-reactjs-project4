@@ -29,6 +29,11 @@ export const ShopContext = createContext(null);
 // If we add more products in future, this function will handle it.
 // This means the no. of cartItems, we do have right now.
 // this function will provide the default state of the Cart.
+// How to convert the array into an object.
+// No. of Counts of Cart Items in [ object1, object2, object3, object4, object5, object6, object7 ]
+// In order to access the no. as key, use square brackets, for strings use dot notation.
+// From this FOR Loop, the key & its value as a count will be assigned to the empty object.
+// Shopping ProductIDs and Cart ProductIDs will be same.
 const getDefaultCart = () => {
   let cart = {};
   // i is to count the Items in Products ArrayOfObjects.
