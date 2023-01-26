@@ -58,4 +58,55 @@ const PRODUCTS = [
   },
 ];
 
+// const PRODUCTSasObjectofObjects = {
+//   1: {
+//     productId: 1,
+//     productName: "Iphone 14",
+//     productPrice: 999,
+//     productImage: product1,
+//   },
+//   2: {
+//     productId: 2,
+//     productName: "Macbook Pro 2022 (M1)",
+//     productPrice: 1999.0,
+//     productImage: product2,
+//   },
+//   3: {
+//     productId: 3,
+//     productName: "Cannon M50 Camera",
+//     productPrice: 699.0,
+//     productImage: product3,
+//   },
+//   4: {
+//     productId: 4,
+//     productName: "WLS Van Gogh Denim Jacket",
+//     productPrice: 228.0,
+//     productImage: product4,
+//   },
+//   5: {
+//     productId: 5,
+//     productName: "LED Light Strips",
+//     productPrice: 19.99,
+//     productImage: product5,
+//   },
+//   6: {
+//     productId: 6,
+//     productName: "SPECTRUM LS TEE",
+//     productPrice: 68.0,
+//     productImage: product6,
+//   },
+//   7: {
+//     productId: 7,
+//     productName: "AUTO SHIRT by GOLF WANG",
+//     productPrice: 120.0,
+//     productImage: product7,
+//   },
+//   8: {
+//     productId: 8,
+//     productName: "UNSTRUCTURED HAT",
+//     productPrice: 40.0,
+//     productImage: product8,
+//   },
+// };
+
 export default PRODUCTS;

@@ -3,7 +3,7 @@ import PRODUCTS from "../products";
 
 // React Context API (Hook) means this store is going to keep track of states, functionalities which can be accessed anywhere in the react app.
 // Calling & Assigning it to Variable, Initially the Value of Store is NULL
-// He have this Context API (Hook), so we can access & change this state in other components (Shop & Cart Page) as well.
+// He has this Context API (Hook), so we can access & change this state in other components (Shop & Cart Page) as well.
 export const ShopContext = createContext(null);
 
 {
@@ -38,7 +38,7 @@ const getDefaultCart = () => {
   let cart = {};
   // i is to count the Items in Products ArrayOfObjects.
   // i = 1, id starts with 1.
-  for (i = 1; i < PRODUCTS.length + 1; i++) {
+  for (let i = 1; i < PRODUCTS.length + 1; i++) {
     // Default Count Value of all the Items is Zero.
     // cart[1] = 0;
     // cart[2] = 0;
@@ -49,6 +49,11 @@ const getDefaultCart = () => {
   }
   return cart;
 };
+// My Default Cart Object => cart = {1:0, 2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0, ...} with default count of Cart ProductIDs is zero.
+
+// In order to change the default count of CartItems on Cart Page (add or remove), we will use a add or remove function.
+
+// cart = {itemId(1):prev[itemId(1)](4), 2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0, ...}
 
 // We are creating this component to organize the Context Store Properly.
 // Defining all the State Variables & Functions.
@@ -70,6 +75,10 @@ const ShopContextProvider = (props) => {
   // Machine to add the Items to the CartItems State Variable
   const addToCart = (itemId) => {
     // Add the Count Value specific to the CartItem
+    // prev = Object of CartItems Count
+    // ...count (Object Destructing) = No. of Items & Same Object as it was before... (CartItem Id : Count of CartItem) => 1:5, 2:0, 3:0, 4:5, 5:9, 6:7, 7:5, 8:0
+    // ...prev (Object Destructing) = No. of Count & Same Object as it was before... (CartItem Id : Count of CartItem) => 1:5, 2:0, 3:0, 4:5, 5:9, 6:7, 7:5, 8:0
+    // { 1:5, 2:0, 3:0, 4:5, 5:9, 6:7, 7:5, 8:0, 9:23(...prev), [itemId()] : prev(Object of CartItems Count)[itemId()] + 1 }
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
   };
 
@@ -77,6 +86,8 @@ const ShopContextProvider = (props) => {
   const removeFromCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
   };
+
+  // Object to pass the contextValue which contains state, functions
   const contextValue = { cartItems, addToCart, removeFromCart };
   return (
     <ShopContext.Provider value={contextValue}>
