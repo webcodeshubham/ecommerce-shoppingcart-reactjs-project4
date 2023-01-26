@@ -8,7 +8,7 @@ This Project explains the core concepts of React JS Library which include Depend
 
 # Screenshot
 
-![Screenshot 2022-12-26 at 4 49 03 PM](https://user-images.githubusercontent.com/115470266/209543201-866a26f9-0cce-4185-a60c-e0f368b2bd9a.png)
+![image](https://user-images.githubusercontent.com/115470266/214836816-847ab124-4f8c-4e8e-8ebe-d9b47405e5b4.png)
 
 # Technologies Used
 
