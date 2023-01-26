@@ -67,12 +67,13 @@ const ShopContextProvider = (props) => {
   //   });
   const [cartItems, setCartItems] = useState(getDefaultCart());
 
-  // Want to add the Items to the Cart
+  // Machine to add the Items to the CartItems State Variable
   const addToCart = (itemId) => {
+    // Add the Count Value specific to the CartItem
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
   };
 
-  // Want to remove the Items to the Cart
+  // Machine to remove the Items from the CartItems State Variable
   const removeFromCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
   };
