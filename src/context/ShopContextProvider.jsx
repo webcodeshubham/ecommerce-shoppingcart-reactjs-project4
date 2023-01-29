@@ -45,6 +45,7 @@ const getDefaultCart = () => {
     // cart[3] = 0;
     // cart[4] = 0;
     // cart[5] = 0;
+    // Assignment of Keys and Values in the Cart Object.
     cart[i] = 0;
   }
   return cart;
@@ -79,11 +80,14 @@ const ShopContextProvider = (props) => {
     // ...count (Object Destructing) = No. of Items & Same Object as it was before... (CartItem Id : Count of CartItem) => 1:5, 2:0, 3:0, 4:5, 5:9, 6:7, 7:5, 8:0
     // ...prev (Object Destructing) = No. of Count & Same Object as it was before... (CartItem Id : Count of CartItem) => 1:5, 2:0, 3:0, 4:5, 5:9, 6:7, 7:5, 8:0
     // { 1:5, 2:0, 3:0, 4:5, 5:9, 6:7, 7:5, 8:0, 9:23(...prev), [itemId()] : prev(Object of CartItems Count)[itemId()] + 1 }
+    // ...prev - it's the same object having id: Count of Products & then add the new key:value pair to the cartItems state holding cart object. In order to acces the itemId, we need to wrap it into rectangular brackets.
+    // prev[id] + 1 = Count of ItemId with 9 + 1 = prevCount + 1.
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
   };
 
   // Machine to remove the Items from the CartItems State Variable
   const removeFromCart = (itemId) => {
+    // prev[id] - 1 = Count of ItemId with 9 - 1 = prevCount - 1.
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
   };
 
