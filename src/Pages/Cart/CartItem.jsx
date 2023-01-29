@@ -26,6 +26,7 @@ const CartItem = (props) => {
                 updateCartItemCount(Number(e.target.value), productId)
               }
             />
+            {/*  HTML Entities/Characters - ASCII Characters */}
             <button onClick={() => addToCart(productId)}>&nbsp;+&nbsp;</button>
           </div>
         </div>

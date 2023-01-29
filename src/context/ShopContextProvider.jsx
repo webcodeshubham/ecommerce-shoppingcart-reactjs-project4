@@ -95,19 +95,22 @@ const ShopContextProvider = (props) => {
   const updateCartItemCount = (newAmount, itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: newAmount }));
   };
-  
+
   // Function to gettheTotalAmount of all the CartItems
   const getTotalCartAmount = () => {
     let totalAmount = 0;
     for (const item in cartItems) {
       if (cartItems[item] > 0) {
-        let itemInfo = PRODUCTS.find((product) => ((product.productId === Number(item))))
-        totalAmount += cartItems[item] * itemInfo.productPrice
+        // Get/Find the product object with specific id.
+        let itemInfo = PRODUCTS.find(
+          (product) => product.productId === Number(item)
+        );
+        // Calculation Logic for the total amount in the Cart.
+        totalAmount += cartItems[item] * itemInfo.productPrice;
       }
     }
-    return totalAmount
-  }
-
+    return totalAmount;
+  };
 
   // Object to pass the contextValue which contains state, functions
   const contextValue = {
@@ -115,7 +118,7 @@ const ShopContextProvider = (props) => {
     addToCart,
     removeFromCart,
     updateCartItemCount,
-    getTotalCartAmount
+    getTotalCartAmount,
   };
 
   console.log(cartItems);
