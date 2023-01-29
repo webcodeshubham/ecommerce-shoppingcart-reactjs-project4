@@ -91,12 +91,32 @@ const ShopContextProvider = (props) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
   };
 
+  // Function to Update the InputText Section of CartItems Page
   const updateCartItemCount = (newAmount, itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: newAmount }));
   };
+  
+  // Function to gettheTotalAmount of all the CartItems
+  const getTotalCartAmount = () => {
+    let totalAmount = 0;
+    for (const item in cartItems) {
+      if (cartItems[item] > 0) {
+        let itemInfo = PRODUCTS.find((product) => ((product.productId === Number(item))))
+        totalAmount += cartItems[item] * itemInfo.productPrice
+      }
+    }
+    return totalAmount
+  }
+
 
   // Object to pass the contextValue which contains state, functions
-  const contextValue = { cartItems, addToCart, removeFromCart, updateCartItemCount };
+  const contextValue = {
+    cartItems,
+    addToCart,
+    removeFromCart,
+    updateCartItemCount,
+    getTotalCartAmount
+  };
 
   console.log(cartItems);
   return (

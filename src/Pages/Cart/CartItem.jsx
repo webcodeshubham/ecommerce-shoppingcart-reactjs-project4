@@ -21,6 +21,7 @@ const CartItem = (props) => {
             </button>
             <input
               type="text"
+              value={cartItems[productId]}
               onChange={(e) =>
                 updateCartItemCount(Number(e.target.value), productId)
               }
