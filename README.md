@@ -15,7 +15,6 @@ This Project explains the core concepts of React JS Library which include Depend
 - CSS - 3
 - JS ES6
 - GitHub Version Control System
-- Netifly Deployment
 - Replit Deployment
 
 # Usage
