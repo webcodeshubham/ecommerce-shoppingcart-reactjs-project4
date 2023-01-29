@@ -37,18 +37,5 @@
 🌺#Y. Add & remove the cartItems from Cart Page. Alter the text Input by using a function in ShopContext in order to update the count on the cart page.
 🌺#Z. Button Functionality and Subtotal Functionality and Cart React-Router-DOM Functionalities.
 
-🔥🥀 Important Notes 🥀🔥
-
-🌿🍃🌳 Contents - Connect the Dots 🌳🍃🌿
-
-✅#A. Explore all the features of the Project.
-✅#B. Get the TMDB API Key.
-✅#C. Create the React Application.
-✅#D. Setup your Deployment Platform - Firebase Hosting.
-✅#E. Get all the Movies.
-✅#F. Build the Posters Rows.
-✅#G. Build the Banner.
-✅#H. Build the Navbar.
-✅#I. Add the Trailer Pop-ups Functionality.
-✅#J. Deploy App to Firebase.
+########################################################################
 

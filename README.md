@@ -1,6 +1,6 @@
 # The E-Commerce Shopping Cart - React JS - Project - 4.
 
-This Project explains the core concepts of React JS Library which include Dependencies Installation using yarn add & npm install Project Flow, Project Layout Approach, States, useState Hook, React-Router-DOM, Basic Logic &amp; How to initialise &amp; setup a React Project, much more.
+This Project explains the core concepts of React JS Library which include Dependencies Installation using yarn add & npm install Project Flow, Project Layout Approach, States, useState Hook, Flow of useContext Hook & Context API, createContext(), CRUD, find() Array Method, Static ArrayOfObjects, BEM Model, useNavigate, phosphor-react(to install icons), Ternary operators, Convert Array into Object, React-Router-DOM, Basic Logic &amp; How to initialise &amp; setup a React Project, much more.
 
 [LIVE HOSTED WEBSITE REPLIT](https://ecommerce-shoppingcart-reactjs-project4.shubhamshriva15.repl.co/)
 
