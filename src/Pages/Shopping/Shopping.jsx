@@ -14,7 +14,7 @@ const Shopping = () => {
           {PRODUCTS.map((product) => {
             return (
               <>
-                <Product product={product} />
+                <Product product={product} key={product.productId} />
               </>
             );
           })}

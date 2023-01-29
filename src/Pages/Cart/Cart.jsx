@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import PRODUCTS from "../../products";
-import Product from "../Shopping/Product";
+import { ShopContext } from "../../context/ShopContextProvider";
+import CartItem from "./CartItem";
+import "../Cart/Cart.css"
 
-const Cart = () => {
+const Cart = (props) => {
+  const { cartItems } = useContext(ShopContext);
+
   return (
     <>
       <div className="cart">
@@ -10,8 +14,10 @@ const Cart = () => {
           <h1>Your Cart Items</h1>
         </div>
         <div className="cartItems">
-          {PRODUCTS.amp((product) => {
-            <Product data={product} />;
+          {PRODUCTS.map((product) => {
+            if (cartItems[product.productId] !== 0) {
+              return <CartItem product={product} />;
+            }
           })}
         </div>
       </div>

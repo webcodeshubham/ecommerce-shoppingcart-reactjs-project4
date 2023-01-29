@@ -32,9 +32,9 @@
 👨‍💻#4. Wrap child components in the Context Provider and supply the state value. Now, all components in this tree will have access to the user Context.
 🌺#U. Read the Same Article here. (https://www.w3schools.com/react/react_usecontext.asp)
 🌺#V. useContext Hook => Use the useContext Hook => In order to use the Context in a child component, we need to access it using the useContext Hook.
-🌺#W. 
-🌺#X. 
-🌺#Y. 
+🌺#W. Create the logic to see the cartItems Counts specific to Product Id => const cartItemAmount = cartItems[productId]
+🌺#X. Write a logic for cartItems Count & display the CartItem on Cart Page. Then, Create a Logic & Style of CartItem Card Component and fetch all the data via props. Adding the Button & display of current count on CartItemCard Component.
+🌺#Y. Add & remove the cartItems from Cart Page. Alter the text Input by using a function in ShopContext in order to update the count on the cart page.
 🌺#Z.  
 
 🔥🥀 Important Notes 🥀🔥

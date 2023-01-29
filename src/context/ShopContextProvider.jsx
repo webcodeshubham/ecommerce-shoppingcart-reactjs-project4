@@ -91,8 +91,14 @@ const ShopContextProvider = (props) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
   };
 
+  const updateCartItemCount = (newAmount, itemId) => {
+    setCartItems((prev) => ({ ...prev, [itemId]: newAmount }));
+  };
+
   // Object to pass the contextValue which contains state, functions
-  const contextValue = { cartItems, addToCart, removeFromCart };
+  const contextValue = { cartItems, addToCart, removeFromCart, updateCartItemCount };
+
+  console.log(cartItems);
   return (
     <ShopContext.Provider value={contextValue}>
       {props.children}
